@@ -2,7 +2,7 @@
 
 :root{
     --cor-um:#d0ced0;
-    --cor-dois: #819ee5;
+    --cor-dois: #819ee5;    
     --cor-tres: #5774ba;
     --cor-quatro: #39559e;
     --cor-cinco: #e1395f;
@@ -20,34 +20,59 @@ html, body{
     width: 100vw;
 }
 body{
-    background-image: linear-gradient( to top, var(--cor-quatro), var(--cor-dois), var(--cor-quatro)); 
+   /* background-image: linear-gradient( to top, var(--cor-quatro), var(--cor-dois), var(--cor-quatro)); */
+    background:
+        linear-gradient(#39569ec1,#39569ec1),
+        url('../imagens/fundo.jpg') no-repeat;
+    background-size: cover;
+    background-position: left bottom;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;    
 }
-main{
-    width: 80vw;
-    height: 60vh;
+header{
+    width: 100vw;
+}
+header nav{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
 }
-main section#logo img{
-    width: 70%;
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+main{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 main section#logo{
     display: flex;
     justify-content: center;
 }
-footer{
-    height: 40vh;
-    padding-bottom: 40px;
+main form{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+}
+main form input{
+    height: 30px;
+    border-radius: 2%;
+    border: none;
+    margin: 3px;
+}
+.botao{
+    background-color: var(--cor-cinco);
+    color: white;
+}
+footer{
+    padding-bottom: 30px;
     color: white;
 }
