@@ -32,6 +32,14 @@ body{
     align-items: center;
     justify-content: space-around;    
 }
+.body_agendamento{
+    background:
+        linear-gradient(#39569ec1,#39569ec1),
+        url('../imagens/fundo-agendamento.jpeg') no-repeat;
+
+        background-size: cover;
+        background-position:center bottom ;
+}
 header{
     width: 100vw;
 }
@@ -67,6 +75,12 @@ main form input{
     border-radius: 2%;
     border: none;
     margin: 3px;
+    padding: 10px;
+}
+h2{
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 .botao{
     background-color: var(--cor-cinco);
