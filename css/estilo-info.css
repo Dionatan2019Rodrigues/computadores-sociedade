@@ -27,6 +27,26 @@ body{
     align-items: center;
     justify-content: space-around;    
 }
+header{
+    width: 100vw;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+a:hover{
+    text-decoration: none;
+    background-color: var(--cor-um);
+    color: var(--cor-quatro);
+    padding: 10px;
+    border-radius: 10px;
+}
 main{
     width: 80vw;
     height: 60vh;

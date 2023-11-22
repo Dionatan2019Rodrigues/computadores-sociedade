@@ -45,20 +45,14 @@ header{
 }
 header nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 a{
     color: white;
     text-decoration: none;
-    padding: 10px;
 }
 a:hover{
-    text-decoration: none;
-    background-color: var(--cor-um);
-    color: var(--cor-quatro);
-    padding: 10px;
-    border-radius: 10px;
+    text-decoration: underline;
 }
 main{
     width: 80vw;
@@ -67,8 +61,6 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding-bottom: 100px;
-    padding-top: 70px;
 }
 main section#logo{
     display: flex;
@@ -79,11 +71,12 @@ main form{
     flex-direction: column;
 }
 main form input{
-    height: 30px;
+    height: 50px;
     border-radius: 2%;
     border: none;
     margin: 3px;
     padding: 10px;
+    transform: translateY(-40px);
 }
 h2{
     color: white;
@@ -92,7 +85,11 @@ h2{
 }
 .botao{
     background-color: var(--cor-cinco);
+    cursor: pointer;
     color: white;
+}
+.botao:hover {
+    background-color: var(--cor-dois);
 }
 footer{
     padding-bottom: 30px;
